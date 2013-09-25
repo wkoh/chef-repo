@@ -1,7 +1,11 @@
 current_dir = File.expand_path( File.dirname(__FILE__)) 
 file_cache_path "#{current_dir}" 
-cookbook_path "#{current_dir}/ cookbooks"
+cookbook_path "#{current_dir}/cookbooks"
 
-role_path "#{current_dir}/ roles" 
-data_bag_path "#{current_dir}/ data_bags"
+puts cookbook_path
 
+role_path "#{current_dir}/roles" 
+data_bag_path "#{current_dir}/data_bags"
+
+puts role_path
+puts data_bag_path
